@@ -1,3 +1,4 @@
+@AbapCatalog.sqlViewName: 'zizitem'
 @AbapCatalog.viewEnhancementCategory: [#NONE]
 --@AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'CDS View BO View'
