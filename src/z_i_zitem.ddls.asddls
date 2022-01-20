@@ -1,15 +1,12 @@
-@AbapCatalog.sqlViewName: 'zizitem'
+@AbapCatalog.sqlViewName: 'ZIZITEM'
 @AbapCatalog.viewEnhancementCategory: [#NONE]
+@AbapCatalog.preserveKey: true
 --@AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'CDS View BO View'
 @Metadata.ignorePropagatedAnnotations: true
-@ObjectModel.usageType:{
-    serviceQuality: #X,
-    sizeCategory: #S,
-    dataClass: #MIXED
-}
+
 define view z_i_zitem as select from zitem
-association to parent z_i_zheader as _header  on  $projection.HeaderUuid = _header.HeaderUuid
+ association to parent z_i_zheader as _header  on  $projection.HeaderUuid = _header.HeaderUuid
 
  {
     key header_uuid as HeaderUuid,
