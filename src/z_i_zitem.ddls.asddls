@@ -8,7 +8,7 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define view entity z_i_zitem as select from zitem
+define view z_i_zitem as select from zitem
 association to parent z_i_zheader as _header  on  $projection.HeaderUuid = _header.HeaderUuid
 
  {
