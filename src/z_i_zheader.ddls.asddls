@@ -8,7 +8,7 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define view entity z_i_zheader
+define view z_i_zheader
   as select from zheader
   composition [0..*] of z_i_zitem as _item
 {
