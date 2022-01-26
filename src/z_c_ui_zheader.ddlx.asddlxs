@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+annotate view Z_C_ZHEADER
+    with 
+{
+
+
+  @UI.facet: [ { id:              'HeaderData',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'Header Data',
+                 position:        10 },
+               { id:              'ItemData',
+                 purpose:         #STANDARD,
+                 type:            #LINEITEM_REFERENCE,
+                 label:           'Item Data',
+                 position:        20,
+                 targetElement:   '_item'} ]  
+
+  @UI: {  lineItem:       [ { position: 10,label: 'Travel UUID' } ],
+          identification: [ { position: 10, label: 'Travel UUID' } ]
+           }  
+header_uuid;
+  @UI: {  lineItem:       [ { position: 20, label: 'Customer'  } ],
+          identification: [ { position: 20, label: 'Customer' } ]
+           }  
+customerid;
+  @UI: {  lineItem:       [ { position: 30, label: 'Header Text'  } ],
+          identification: [ { position: 30, label: 'Header Text' } ],
+          selectionField: [ { position: 10, element: 'header_text' } ]
+           }  
+header_text;
+  @UI: {  lineItem:       [ { position: 40, label: 'last change' } ],
+          identification: [ { position: 40, label: 'last change' } ]
+           }  
+last_changed_at;
+--/* Associations */
+--_item;    element_name;
+    
+}

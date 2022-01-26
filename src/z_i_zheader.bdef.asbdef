@@ -1,0 +1,43 @@
+managed implementation in class zbp_i_zheader unique;
+strict;
+
+define behavior for z_i_zheader //alias <alias_name>
+persistent table ZHEADER
+lock master
+etag master last_changed_at
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  // administrative fields: read only
+  field ( readonly ) last_changed_at;
+
+  // damit die uuid automatisch generiert wird
+  field ( numbering : managed, readonly ) header_uuid;
+
+  create;
+  update;
+  delete;
+  association _item { create; }
+}
+
+define behavior for z_i_zitem //alias <alias_name>
+persistent table ZITEM
+lock dependent by _header
+etag master last_changed_at
+authorization dependent by _header
+//etag master <field_name>
+{
+
+  // administrative fields: read only
+  field ( readonly ) last_changed_at;
+
+  // damit die uuid automatisch generiert wird
+  field ( numbering : managed, readonly ) item_uuid;
+
+
+  update;
+  delete;
+  field ( readonly ) header_uuid;
+  association _header;
+}

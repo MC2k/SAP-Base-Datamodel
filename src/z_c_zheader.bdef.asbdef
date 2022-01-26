@@ -1,0 +1,19 @@
+projection;
+strict;
+//managent service need the projection view
+define behavior for Z_C_ZHEADER //alias <alias_name>
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _item { create; }
+}
+
+define behavior for z_c_zitem //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _header;
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition for Z_C_ZHEADER'
+define service Z_SD_zheader {
+  expose Z_C_ZHEADER;
+  expose z_c_zitem;
+}
