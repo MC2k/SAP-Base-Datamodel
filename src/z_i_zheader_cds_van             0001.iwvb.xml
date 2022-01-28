@@ -24,14 +24,6 @@
      <CHANGED_TIMESTMP>20220127181346</CHANGED_TIMESTMP>
     </_-IWBEP_-I_MGW_VAH>
    </_-IWBEP_-I_MGW_VAH>
-   <_-IWBEP_-I_MGW_VAT>
-    <_-IWBEP_-I_MGW_VAT>
-     <TECHNICAL_NAME>Z_I_ZHEADER_CDS_VAN</TECHNICAL_NAME>
-     <VERSION>0001</VERSION>
-     <LANGUAGE>E</LANGUAGE>
-     <DESCRIPTION>Generic Annotation Provider</DESCRIPTION>
-    </_-IWBEP_-I_MGW_VAT>
-   </_-IWBEP_-I_MGW_VAT>
   </asx:values>
  </asx:abap>
 </abapGit>
