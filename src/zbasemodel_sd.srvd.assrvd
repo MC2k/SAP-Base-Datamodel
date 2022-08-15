@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZBASEMODEL Service Defeinition'
+define service ZBASEMODEL_SD {
+  expose z_i_zheader as header;
+  expose z_i_zitem as item;
+}

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSH" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HEAD>
+    <NAME>1D3A900C71CDEFB264C85F0A04F670</NAME>
+    <TYPE>HT</TYPE>
+    <DISPLAY_NAME>R3TR IWSV ZBASEMODEL_SB                      0001</DISPLAY_NAME>
+    <MODIFIER>DEVELOPER</MODIFIER>
+    <MODDATE>2022-08-15</MODDATE>
+    <MODTIME>12:23:38</MODTIME>
+    <SRCSYSTEM>A4H</SRCSYSTEM>
+    <AUTHOR>DEVELOPER</AUTHOR>
+    <DEVCLASS>ZBASEMODEL</DEVCLASS>
+   </HEAD>
+   <USOBX>
+    <USOBX>
+     <NAME>1D3A900C71CDEFB264C85F0A04F670</NAME>
+     <TYPE>HT</TYPE>
+     <OBJECT>S_SERVICE</OBJECT>
+     <MODIFIER>DEVELOPER</MODIFIER>
+     <MODDATE>2022-08-15</MODDATE>
+     <MODTIME>12:23:38</MODTIME>
+     <OKFLAG>X</OKFLAG>
+    </USOBX>
+   </USOBX>
+   <USOBX_EXT>
+    <item>
+     <OBJECT>S_SERVICE</OBJECT>
+     <TTEXT>Prüfung beim Start von ext. Services</TTEXT>
+     <OCLSS>AAAB</OCLSS>
+     <MODIFIER>DEVELOPER</MODIFIER>
+     <MODDATE>2022-08-15</MODDATE>
+     <MODTIME>12:23:38</MODTIME>
+     <OKFLAG>X</OKFLAG>
+     <DEVCLASS>S_PROFGEN</DEVCLASS>
+     <PS_POSID>BC-SEC-AUT-PFC</PS_POSID>
+     <CI_TEXT>prüfen</CI_TEXT>
+     <CH_TEXT>prüfen</CH_TEXT>
+     <PR_TEXT>Nein</PR_TEXT>
+     <EXCEP>3</EXCEP>
+     <EXCEP_TX>Okay</EXCEP_TX>
+     <EXCEP_ICON>@08@</EXCEP_ICON>
+    </item>
+   </USOBX_EXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>
