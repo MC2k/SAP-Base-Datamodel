@@ -3,7 +3,10 @@ annotate view Z_C_ZHEADER
     with 
 {
 
-
+-- UI.facet steuert die navigation im UI
+-- fehlt dies, ist der absprung in thie nächste seite leer
+-- bei alten System wie 750SP17, muss das von hand in die annotation
+-- implementiert werden MPC_EXT Classe oder im annotation file
   @UI.facet: [ { id:              'HeaderData',
                  purpose:         #STANDARD,
                  type:            #IDENTIFICATION_REFERENCE,
@@ -15,6 +18,11 @@ annotate view Z_C_ZHEADER
                  label:           'Item Data',
                  position:        20,
                  targetElement:   '_item'} ]  
+/* UI.facet targetElement   This annotation specifies a path to the CDS view whose annotation is referenced. 
+Not specified means the current view. The path is converted to an OData AnnotationPath.
+https://help.sap.com/viewer/fc4c71aa50014fd1b43721701471913d/202110.000/en-US/a7f4d7c6c92b4f929695eeed6e8c38e1.html
+*/
+
 
   @UI: {  lineItem:       [ { position: 10,label: 'Travel UUID' } ],
           identification: [ { position: 10, label: 'Travel UUID' } ]
